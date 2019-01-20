@@ -31,7 +31,7 @@ class Aboutme extends Component {
                 <div className="intro">
                     <h2>
                         Hello. I am <span className="rotate-words">
-                            <span>a Fullstack Developer.</span>
+                            <span>an Engineer.</span>
                             <span>a Freelancer.</span>
                             <span>an Inventor.</span>
                             <span>a ReactJS fan.</span>

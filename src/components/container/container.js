@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Aboutme from '../aboutme/aboutme';
+import WorkProcess from "../workprocess/workprocess";
 import TwitterFeed from '../twitterfeed/twitterfeed';
 
 class Container extends Component {
@@ -33,6 +34,7 @@ class Container extends Component {
                                 </ul>
                             </div> */}
                         </div>
+                        <WorkProcess></WorkProcess>
                     </div>
                 </section>
             </div>
