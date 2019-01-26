@@ -1,59 +1,28 @@
 import React, { Component } from 'react';
 
 class WorkProcess extends Component {
+    state = {
+        icon:["icon-lamp","fa fa-puzzle-piece","icon-brush","fa fa-cube","fa fa-bug","fa fa-rocket"],
+        desc:["IDEA","CONCEPT","DESIGN","DEVELOP","TEST","LAUNCH"]
+    };
+    showProcess=()=>(
+        this.state.icon.map((item,i)=>(
+            <div className="col-xs-6 col-sm-4 col-md-2">
+                <div className="process">
+                    <div className="process-box">
+                        <i className={this.state.icon[i]}/>
+                        <h4>{this.state.desc[i]}</h4>
+                    </div>
+                </div>
+            </div>
+        ))
+    );
     render() {
         return (
             <div>
-                <h2 class="section-title"><span><i class="icon-layers-alt"></i>WORK PROCESS</span></h2>
-                <div class="row">
-                    <div class="col-xs-6 col-sm-4 col-md-2">
-                        <div class="process">
-                            <div class="process-box">
-                                <i class="icon-lamp"></i>
-                                <h4>IDEA</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col-md-2">
-                        <div class="process">
-                            <div class="process-box">
-                                <i class="fa fa-puzzle-piece"></i>
-                                <h4>CONCEPT</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col-md-2">
-                        <div class="process">
-                            <div class="process-box">
-                                <i class="icon-brush"></i>
-                                <h4>DESIGN</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col-md-2">
-                        <div class="process">
-                            <div class="process-box">
-                                <i class="fa fa-cube"></i>
-                                <h4>DEVELOP</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col-md-2">
-                        <div class="process">
-                            <div class="process-box">
-                                <i class="fa fa-bug"></i>
-                                <h4>TEST</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col-md-2">
-                        <div class="process">
-                            <div class="process-box">
-                                <i class="fa fa-rocket"></i>
-                                <h4>LAUNCH</h4>
-                            </div>
-                        </div>
-                    </div>
+                <h2 className="section-title"><span><i className="icon-layers-alt"/>WORK PROCESS</span></h2>
+                <div className="row">
+                    {this.showProcess()}
                 </div>
             </div>
         );

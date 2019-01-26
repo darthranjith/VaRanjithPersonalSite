@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Aboutme from '../aboutme/aboutme';
+import AboutMe from '../aboutme/aboutme';
 import WorkProcess from "../workprocess/workprocess";
 import TwitterFeed from '../twitterfeed/twitterfeed';
+import FunFacts from "../funfacts/funfacts";
 
 class Container extends Component {
     render() {
@@ -11,10 +12,10 @@ class Container extends Component {
                     <div className="content">
                         <div className="row">
                             <div className="col-md-8">
-                                <Aboutme></Aboutme>
+                                <AboutMe/>
                             </div>
                             <div className="col-md-4">
-                                <TwitterFeed></TwitterFeed>
+                                <TwitterFeed/>
                             </div>
                             {/* <div className="col-md-3">
                                 <h2 className="section-title"><span><i className="icon-cog-1"></i>Latest Pet Projects</span></h2>
@@ -34,7 +35,8 @@ class Container extends Component {
                                 </ul>
                             </div> */}
                         </div>
-                        <WorkProcess></WorkProcess>
+                        <WorkProcess/>
+                        <FunFacts/>
                     </div>
                 </section>
             </div>

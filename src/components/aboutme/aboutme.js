@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Aboutme extends Component {
+class AboutMe extends Component {
     componentDidMount = () => {
         let rotate_words = document.getElementsByClassName('rotate-words');
         if (rotate_words.length) {
@@ -20,13 +20,13 @@ class Aboutme extends Component {
                 }, 3000);
             }
         }
-    }
+    };
 
     render() {
         return (
             <div>
                 <h2 className="section-title">
-                    <span><i className="icon-guest"></i>A LITTLE ABOUT ME</span>
+                    <span><i className="icon-guest"/>A LITTLE ABOUT ME</span>
                 </h2>
                 <div className="intro">
                     <h2>
@@ -50,4 +50,4 @@ class Aboutme extends Component {
     }
 }
 
-export default Aboutme;
+export default AboutMe;
